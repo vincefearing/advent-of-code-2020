@@ -3,7 +3,20 @@
 
 using namespace std;
 
+int treeCounter(int right, int down);
+
 int main()
+{
+	/*unsigned product = treeCounter(1, 1) * treeCounter(3, 1) * treeCounter(5, 1) * treeCounter(7, 1) * treeCounter(1, 2);
+	cout << product << endl;*/
+	/*cout << treeCounter(1, 1) << endl;
+	cout << treeCounter(3, 1) << endl;
+	cout << treeCounter(5, 1) << endl;
+	cout << treeCounter(7, 1) << endl;*/
+	cout << treeCounter(1, 2) << endl;
+}
+
+int treeCounter(int right, int down)
 {
 	ifstream inFile;
 	inFile.open("data.txt");
@@ -18,13 +31,18 @@ int main()
 
 	while (!inFile.eof())
 	{
-		inFile >> temp;
+		//inFile >> temp;
+		for (int i = 0; i < down; ++i)
+		{
+			inFile >> temp;
+		}
+		
 		if (temp.at(position) == '#')
 		{
 			counter++;
 		}
 
-		position += 3;
+		position += right;
 
 		if (position >= temp.size())
 		{
@@ -32,5 +50,5 @@ int main()
 		}
 	}
 
-	cout << "Trees: " << counter << endl;
+	return counter;
 }
