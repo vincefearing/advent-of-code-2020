@@ -29,6 +29,12 @@ int treeCounter(int right, int down)
 		cout << "Error opening file" << endl;
 	}
 
+	if (down == 2)
+	{
+		inFile >> temp;
+		position = 1;
+	}
+
 	while (!inFile.eof())
 	{
 		//inFile >> temp;

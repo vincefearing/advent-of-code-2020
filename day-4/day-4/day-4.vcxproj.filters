@@ -18,19 +18,21 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="validation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="data2.txt">
+    <Text Include="testing.txt">
       <Filter>Resource Files</Filter>
     </Text>
-    <Text Include="data3.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-    <Text Include="data4.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="validation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
