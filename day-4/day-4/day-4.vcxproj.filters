@@ -29,6 +29,9 @@
     <Text Include="testing.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="test2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="validation.h">

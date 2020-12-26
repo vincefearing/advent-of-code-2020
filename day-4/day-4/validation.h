@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <ctype.h>
 
 using namespace std;
 
@@ -19,5 +20,6 @@ public:
 	void reset();
 	validation();
 	void validate(string temp);
+	void validate2(string temp);
 	bool isValid();
 };
